@@ -1,0 +1,524 @@
+/* Basic reset and styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-frame {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    background: #f1f1f1;
+}
+.logo img {
+    position: absolute;
+width: 164px;
+height: 75px;
+left: 34px;
+top: 23px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Styles for the "Asosiy" section link in the header */
+header nav a#asosiy {
+    position: absolute;
+    width: 50px;
+    height: 19px;
+    left: 236px;
+    top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #008DFF;
+}
+
+
+header nav a#uchrashuvlar {
+position: absolute;
+width: 100px;
+height: 19px;
+left: 338px;
+top: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+
+
+}
+
+
+
+
+header nav a#sharhlar {
+position: absolute;
+width: 63px;
+height: 19px;
+left: 490px;
+top: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #1E1E1E;
+}
+header nav a#malumotlar {
+
+    position: absolute;
+    width: 39px;
+    height: 19px;
+    left: 605px;
+    top: 50px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #1E1E1E;
+}
+
+header nav a#profil
+{
+
+position: absolute;
+width: 85px;
+height: 19px;
+left: 726px;
+top: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+}
+
+/* Styles for the search form */
+.search-form {
+    position: absolute;
+    width: 365px;
+    height: 40px;
+    left: 1043px;
+    top: 40px;
+    background: #008DFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Style the input field within the search form */
+.search-form #search-input {
+    flex: 1; /* Take up remaining space */
+    height: 100%; /* Match parent height */
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    padding: 0 10px;
+}
+
+/* Style the search button within the search form */
+.search-form button {
+    padding: 8px 16px;
+    background-color: #66ba9a44;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.search-form ::placeholder{
+    color: #fff;
+}
+/* Hover effect for the search button */
+.search-form button:hover {
+    background-color: #005E9F;
+}
+
+
+section {
+    padding: 50px;
+}
+
+
+
+.homepage-news img{
+
+position: absolute;
+width: 1500px;
+height: 506px;
+left: calc(8% - (1136px/100)*8);
+top: 148px;
+
+
+}
+/* Style the language button */
+.language-button {
+    position: absolute;
+    left: 1430px; /* Adjust as needed */
+    top: 40px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.flag-icon {
+    width: 30px;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px;
+}
+
+.language-text {
+    color: #0a1f4a;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.language-options {
+    display: none; /* Initially hide the language options */
+    position: absolute;
+    top: 40px; /* Adjust to position below the language button */
+    right: 0; /* Adjust as needed */
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.language-option {
+    display: block;
+    padding: 8px 16px;
+    color: #1E1E1E;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.language-option:hover {
+    background-color: #F4F4F4;
+}
+
+
+.animated-text {
+    position: absolute;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 423px; /* Set the width of the text box */
+    height: 88px; /* Set the height of the text box */
+    left: 100px; /* Adjust left positioning */
+    top: 200px; /* Adjust top positioning */
+    background-color:rgba(63, 19, 19, 0); /* Semi-transparent background for readability */
+    padding: 20px; /* Add padding inside the text box */
+    box-sizing: border-box; /* Include padding in total width/height */
+    color: #FFF6F6;
+}
+
+
+.animated-text .word {
+    font-size: 29px !important; /* Use !important to override other styles if necessary */
+}
+
+  
+  .word {
+    display: inline-block;
+    opacity: 0;
+    animation: fade-in 4.5s linear infinite;
+    font-size: 29px; /* Increase the font size of each word to 24 pixels */
+}
+  .word:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .word:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .word:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .word:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  .word:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  .word:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  .word:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  
+  .word:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  
+  .word:nth-child(9) {
+    animation-delay: 1.6s;
+  }
+  
+  .word:nth-child(10) {
+    animation-delay: 1.8s;
+  }
+  
+  .word:nth-child(11) {
+    animation-delay: 2s;
+  }
+  
+  .word:nth-child(12) {
+    animation-delay: 2.2s;
+  }
+  
+  .word:nth-child(13) {
+    animation-delay: 2.4s;
+  }
+  
+  .word:nth-child(14) {
+    animation-delay: 2.6s;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.medlog-description{
+
+position: absolute;
+width: 375px;
+height: 57px;
+left: 118px;
+top: 445px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 19px;
+
+color: #FFF6F6;
+}
+.location-button {
+    position: absolute;
+    top: 500px; /* Adjust as needed to position the button */
+    left: 188px; /* Align horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(#3351b7, #45a049);
+    border: none;
+    border-radius: 5px;
+    color: rgba(36, 1, 1, 0.599);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    padding: 0 10px;
+  }
+
+/* Style for the section title "Shifokorlar" */
+.section-title {
+    position: absolute; /* Position the element absolutely */
+    bottom: -50px; /* Adjust the top position as needed */
+    left: 148px; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally using transform */
+    text-align: center; /* Center the text within the container */
+}
+
+.section-title h2 {
+    font-family: 'Inter', sans-serif; /* Use custom font */
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 40px; /* Set font size to 40 pixels (adjust as needed) */
+    color: #333; /* Set text color (adjust as needed) */
+}
+
+.section-title text{
+    /* Barchasi */
+
+position: absolute;
+width: 65px;
+height: 19px;
+right: -1200px;
+bottom: 42px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #008DFF;
+
+
+}
+
+.shifokorlar-container{
+position: absolute;
+width: 1252px;
+height: 364px;
+left: 14px;
+top: 894px;
+}
+.doctor {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.doctor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.doctor h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.doctor p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Example of responsive CSS using media queries */
+
+/* For small screens (phones) */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .doctor-group {
+        flex-direction: column; /* Stack doctors vertically on small screens */
+    }
+    .doctor {
+        width: 100%; /* Full width for each doctor on small screens */
+    }
+    .doctor img {
+        width: 100%; /* Make images fill the container on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+    /* Add more responsive styles as needed */
+}
+
+/* footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+} */
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .header-frame {
+        height: auto; /* Adjust header height for smaller screens */
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    .logo img {
+        height: 50px; /* Reduce logo size */
+        left: 12px;
+        top: auto;
+        margin: 0; /* Reset margin */
+    }
+
+    nav {
+        position: static; /* Reset position for navigation */
+        margin-top: 10px; /* Add margin for spacing */
+        text-align: center; /* Center align navigation items */
+    }
+
+    .search-form {
+        position: static; /* Reset position for search form */
+        margin-top: 10px; /* Add margin for spacing */
+        text-align: center; /* Center align search form */
+    }
+
+    .search-form #search-input {
+        width: 80%; /* Adjust input width */
+    }
+
+    .location-button {
+        width: 120px; /* Adjust button width */
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .section-title {
+        font-size: 20px; /* Reduce section title font size */
+    }
+
+    .shifokorlar-container {
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    .doctor {
+        width: 100%; /* Full width for each doctor */
+    }
+
+    .doctor img {
+        width: 100%; /* Make images fill the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* Adjust layout for smaller screens */
+    .section {
+        flex-basis: 100%; /* Each section takes full width on smaller screens */
+        max-width: 100%; /* Each section occupies full width */
+    }
+}

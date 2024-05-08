@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLog - Online Platforma</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <div class="header-frame">
+        <header>
+            <div class="logo">
+                <img src="images/MedLog_Logo.png" alt="MedLog Logo">
+            </div>
+            <nav>
+                <a href="#asosiy" id="asosiy">Asosiy</a>
+                <a href="#uchrashuvlar" id="uchrashuvlar">Uchrashuvlar</a>
+                <a href="#sharhlar" id="sharhlar">Sharhlar</a>
+                <a href="#malumotlar" id="malumotlar">Malumotlar</a>
+                <a href="#profil" id="profil">Profil</a>
+            </nav>
+            <form class="search-form" action="#" method="GET">
+                <input type="text" id="search-input" name="search" placeholder="Izlayotgan narsangizni yozing">
+                <button type="submit" class="search-button">
+                    Qidirish 
+                </button>
+            </form>
+            <div class="language-dropdown">
+                <button class="language-button" onclick="toggleLanguages()">
+                    <!-- Button content (flag icon, language text) -->
+                    <img src="images/uzbek_flag.png" alt="Uzbek Flag" class="flag-icon">
+                    <span class="language-text">O'zbek</span>
+                </button>
+                <div class="language-options" id="languageOptions">
+                    <!-- Language options (list of languages) -->
+                    <a href="#" class="language-option">O'zbek</a>
+                    <a href="#" class="language-option">English</a>
+                    <a href="#" class="language-option">Русский</a>
+                </div>
+            </div>
+            
+            
+        </header>
+    </div>
+    
+    <div class="homepage-news">
+        <img src="images/HomePage-Photo.png" alt="HomePage-Photo">
+        <!-- <div class="overlay-text">
+            <p id="typing-text">Sog'liqni saqlash tizimini raqamlashtirish uchun ishlab chiqarilgan ko'plab qulayliklarga boy internet sahifa.</p>
+        </div> -->
+        <div class="animated-text">
+            <span class="word">Sog'liqni</span>
+            <span class="word">saqlash</span>
+            <span class="word">tizimini</span>
+            <span class="word">raqamlashtirish</span>
+            <span class="word">uchun</span>
+            <span class="word">ishlab</span>
+            <span class="word">chiqarilgan</span>
+            <span class="word">ko'plab</span>
+            <span class="word">qulayliklarga</span>
+            <span class="word">boy</span>
+            <span class="word">internet</span>
+            <span class="word">sahifa</span>
+            <span class="word">.</span>
+          </div>
+        <div class ="medlog-description">
+            <text>Tez tibbiy yordamga manzilingizni jo'natish uchun pastdagi tugmani bosing</text>  
+        </div>
+>
+        <button class="location-button" id="location-button" onclick=" getLocationAndSendToTelegram()">Manzil yuborish</button>
+        <script>
+            // Paste simplified JavaScript functions here
+    
+            function sendLocationToTelegram(latitude, longitude) {
+             const chatUsername = 'Safarmurod_7'; // Your Telegram username or chat ID
+             const message = `https://t.me/${chatUsername}?text=Mening%20hozirgi%20manzilim:%0ALatitude:%20${latitude}%0ALongitude:%20${longitude}`;
+
+            window.open(message, '_blank');
+}
+            // Function to get user's location and send to Telegram
+            function getLocationAndSendToTelegram() {
+            if (navigator.geolocation) {
+                 navigator.geolocation.getCurrentPosition(
+            position => {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                sendLocationToTelegram(latitude, longitude);
+            },
+            error => {
+                console.error("Error getting location:", error);
+                alert("Failed to get your location. Please try again.");
+            }
+        );
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+        </script>
+    </div>
+
+    <div class="section-title">
+        <h2>Shifokorlar</h2>
+        <text>Barchasi</text>
+    </div>
+   
+    <div class="shifokorlar-container">
+        <div class="doctor1">
+            <img src="images/doctor1.png" alt="Doctor 1">
+            <h4>Dr. John Doe</h4>
+            <p>Yurak jarrohi</p>
+        </div>
+        <div class="doctor2">
+            <img src="images/doctor2.png" alt="Doctor 2">
+            <h4>Dr. Jane Smith</h4>
+            <p>TIsh shifokori</p>
+        </div>
+        <div class="doctor3">
+            <img src="images/doctor3.png" alt="Doctor 3">
+            <h4>Dr. Robert A</h4>
+            <p>Lor</p>
+        </div>
+        <div class="doctor4">
+            <img src="images/doctor4.jpg" alt="Doctor 4">
+            <h4>Dr. Karl Hoppkins</h4>
+            <p>Neuroxirurg</p>
+        </div>
+        <!-- Add more doctors as needed -->
+    </div>
+    
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+    <script src="js/script.js" async></script>
+
+</body>
+</html>
