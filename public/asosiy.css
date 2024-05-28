@@ -379,12 +379,6 @@ color: #FFF6F6;
     text-align: center; /* Center the text within the container */
 }
 
-.section-title h2 {
-    font-family: 'Inter', sans-serif; /* Use custom font */
-    font-weight: bold; /* Set font weight to bold */
-    font-size: 40px; /* Set font size to 40 pixels (adjust as needed) */
-    color: #333; /* Set text color (adjust as needed) */
-}
 
 .section-title text{
     /* Barchasi */
@@ -405,14 +399,29 @@ color: #008DFF;
 
 
 }
-
-.shifokorlar-container{
-position: absolute;
-width: 1252px;
-height: 364px;
-left: 14px;
-top: 894px;
+.shifokorlar-container {
+    position: absolute;
+    width: 1252px;
+    height: 364px;
+    left: 14px;
+    top: 894px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
+
+.shifokorlar-container > div {
+    text-align: center;
+    border: 1px solid #f4f3f300;
+    padding: 20px;
+    background-color: rgb(233, 239, 244);
+}
+
+.shifokorlar-container img {
+    max-width: 100%;
+    height: auto;
+}
+
 .doctor {
     text-align: center;
     margin: 20px;
@@ -443,85 +452,3 @@ top: 894px;
 
 /* Example of responsive CSS using media queries */
 
-/* For small screens (phones) */
-@media only screen and (max-width: 600px) {
-    /* Adjust styles for smaller screens */
-    .doctor-group {
-        flex-direction: column; /* Stack doctors vertically on small screens */
-    }
-    .doctor {
-        width: 100%; /* Full width for each doctor on small screens */
-    }
-    .doctor img {
-        width: 100%; /* Make images fill the container on small screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-    /* Add more responsive styles as needed */
-}
-
-/* footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-} */
-
-/* Media query for screens smaller than 600px */
-@media only screen and (max-width: 600px) {
-    .header-frame {
-        height: auto; /* Adjust header height for smaller screens */
-        padding: 10px; /* Add padding for spacing */
-    }
-
-    .logo img {
-        height: 50px; /* Reduce logo size */
-        left: 12px;
-        top: auto;
-        margin: 0; /* Reset margin */
-    }
-
-    nav {
-        position: static; /* Reset position for navigation */
-        margin-top: 10px; /* Add margin for spacing */
-        text-align: center; /* Center align navigation items */
-    }
-
-    .search-form {
-        position: static; /* Reset position for search form */
-        margin-top: 10px; /* Add margin for spacing */
-        text-align: center; /* Center align search form */
-    }
-
-    .search-form #search-input {
-        width: 80%; /* Adjust input width */
-    }
-
-    .location-button {
-        width: 120px; /* Adjust button width */
-        font-size: 14px; /* Reduce font size for smaller screens */
-    }
-
-    .section-title {
-        font-size: 20px; /* Reduce section title font size */
-    }
-
-    .shifokorlar-container {
-        padding: 10px; /* Add padding for spacing */
-    }
-
-    .doctor {
-        width: 100%; /* Full width for each doctor */
-    }
-
-    .doctor img {
-        width: 100%; /* Make images fill the container */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-@media only screen and (max-width: 600px) {
-    /* Adjust layout for smaller screens */
-    .section {
-        flex-basis: 100%; /* Each section takes full width on smaller screens */
-        max-width: 100%; /* Each section occupies full width */
-    }
-}
