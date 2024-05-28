@@ -104,10 +104,29 @@
     </div>
 
     <div class="section-title">
-        <h2>Shifokorlar</h2>
+        <h4>Shifokorlar</h4>
         <text>Barchasi</text>
     </div>
    
+    <style>
+        .shifokorlar-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+    
+        .shifokorlar-container > div {
+            text-align: center;
+            border: 1px solid #cccccc;
+            padding: 20px;
+        }
+    
+        .shifokorlar-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    
     <div class="shifokorlar-container">
         <div class="doctor1">
             <img src="images/doctor1.png" alt="Doctor 1">
@@ -131,6 +150,7 @@
         </div>
         <!-- Add more doctors as needed -->
     </div>
+    
     
     <footer>
         <!-- Footer content goes here -->
