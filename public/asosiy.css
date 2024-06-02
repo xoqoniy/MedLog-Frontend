@@ -466,3 +466,159 @@ line-height: 44px;
 /* identical to box height */
 color: #1E1E1E;
 }
+
+/* .Doctor-types{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+} */
+/* Group 902 */
+.Doctor-types{
+  position: absolute;
+  width: 1136px;
+  height: 382px;
+  left: 72px;
+  top: 1486px;
+
+}
+/* Frame 854 */
+.Kardiolog {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 365px;
+  height: 173px;
+  left: 72px;
+  top: 1486px;
+  
+  background: #a3a2d5;
+  border: 1px solid rgba(30, 30, 30, 0.1);
+  border-radius: 10px;
+  
+  
+}
+
+.Kardiolog b{
+  /* Kardiolog */
+
+position: absolute;
+width: 111px;
+height: 29px;
+left: 24px;
+top: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: rgba(30, 30, 30, 0.9);
+
+
+}
+.Kardiolog p{
+  position: absolute;
+  width: 209px;
+  height: 76px;
+  left: 24px;
+  top: 65px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #000000;
+  
+}
+
+.Kardilog-image{
+  /* image 11 */
+
+position: absolute;
+width: 117px;
+height: 142px;
+left: 248px;
+top: 24px;
+
+background: url(images/asosiy/Kardiolog.png);
+
+}
+
+
+.Nevrolog{
+  /* Frame 855 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 365px;
+height: 173px;
+left: 458px;
+top: 1486px;
+
+background: #FFFFFF;
+border: 1px solid rgba(30, 30, 30, 0.1);
+border-radius: 10px;
+
+}
+
+.Lor {
+  /* Frame 856 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 365px;
+height: 189px;
+left: 843px;
+top: 1486px;
+
+background: #FFFFFF;
+border: 1px solid rgba(30, 30, 30, 0.1);
+border-radius: 10px;
+
+}
+
+.Rentgen {
+  /* Frame 857 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 365px;
+height: 173px;
+left: 72px;
+top: 1695px;
+
+background: #FFFFFF;
+border: 1px solid rgba(30, 30, 30, 0.1);
+border-radius: 10px;
+
+}
+
+.Okulist{
+  /* Frame 858 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 365px;
+height: 173px;
+left: 457px;
+top: 1695px;
+
+background: #FFFFFF;
+border: 1px solid rgba(30, 30, 30, 0.1);
+border-radius: 10px;
+
+}
+
+.Travmatolog{
+  
+}
