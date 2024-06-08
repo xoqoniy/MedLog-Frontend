@@ -406,7 +406,7 @@ color: #008DFF;
     position: absolute;
     width: 1252px;
     height: 364px;
-    left: 14px;
+    left: 80px;
     top: 894px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
