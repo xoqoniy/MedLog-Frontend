@@ -15,7 +15,7 @@ body, html {
 }
 .logo img {
     position: absolute;
-width: 164px;
+max-width: 164px;
 height: 75px;
 left: 34px;
 top: 23px;
@@ -42,7 +42,7 @@ nav ul li a {
 /* Styles for the "Asosiy" section link in the header */
 header nav a#asosiy {
     position: absolute;
-    width: 50px;
+    max-width: 50px;
     height: 19px;
     left: 236px;
     top: 50px;
@@ -57,7 +57,7 @@ header nav a#asosiy {
 
 header nav a#uchrashuvlar {
 position: absolute;
-width: 100px;
+max-width: 100px;
 height: 19px;
 left: 338px;
 top: 50px;
@@ -78,7 +78,7 @@ color: #1E1E1E;
 
 header nav a#sharhlar {
 position: absolute;
-width: 63px;
+max-width: 63px;
 height: 19px;
 left: 490px;
 top: 50px;
@@ -94,7 +94,7 @@ color: #1E1E1E;
 header nav a#malumotlar {
 
     position: absolute;
-    width: 39px;
+    max-width: 39px;
     height: 19px;
     left: 605px;
     top: 50px;
@@ -112,7 +112,7 @@ header nav a#profil
 {
 
 position: absolute;
-width: 85px;
+max-width: 85px;
 height: 19px;
 left: 726px;
 top: 50px;
@@ -130,7 +130,7 @@ color: #000000;
 /* Styles for the search form */
 .search-form {
     position: absolute;
-    width: 365px;
+    max-width: 365px;
     height: 40px;
     left: 1043px;
     top: 40px;
@@ -208,7 +208,7 @@ top: 148px;
 
 
 .flag-icon {
-    width: 30px;
+    max-width: 30px;
     height: auto; /* Maintain aspect ratio */
     margin-right: 8px;
 }
@@ -249,7 +249,7 @@ top: 148px;
 .animated-text {
     position: absolute;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 423px; /* Set the width of the text box */
+    max-width: 423px; /* Set the width of the text box */
     height: 88px; /* Set the height of the text box */
     left: 100px; /* Adjust left positioning */
     top: 200px; /* Adjust top positioning */
@@ -339,7 +339,7 @@ top: 148px;
 .medlog-description{
 
 position: absolute;
-width: 375px;
+max-width: 375px;
 height: 57px;
 left: 118px;
 top: 445px;
@@ -357,7 +357,7 @@ color: #FFF6F6;
     top: 500px; /* Adjust as needed to position the button */
     left: 188px; /* Align horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    width: 150px;
+    max-width: 150px;
     height: 40px;
     background: linear-gradient(#3351b7, #45a049);
     border: none;
@@ -385,7 +385,7 @@ color: #FFF6F6;
     /* Barchasi */
 
 position: absolute;
-width: 65px;
+max-width: 65px;
 height: 19px;
 right: -1200px;
 bottom: 42px;
@@ -404,7 +404,7 @@ color: #008DFF;
 
 .shifokorlar-container {
     position: absolute;
-    width: 1252px;
+    max-width: 1252px;
     height: 364px;
     left: 80px;
     top: 894px;
@@ -629,7 +629,7 @@ box-sizing: border-box;
 
 position: absolute;
 width: 365px;
-height: 189px;
+height: 173px;
 left: 843px;
 top: 1486px;
 
